@@ -8,10 +8,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    let screen = FirstScreenViewController()
+    
+    override func loadView() {
+        super.loadView()
+        self.view = screen
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
 
