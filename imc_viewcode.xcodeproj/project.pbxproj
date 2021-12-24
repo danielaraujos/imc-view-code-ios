@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		3825C8AA800190382D189273 /* Pods_imc_viewcodeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89981499D9D425A86146B6D7 /* Pods_imc_viewcodeTests.framework */; };
 		4CB34B3F2774F3E200666C21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB34B3E2774F3E200666C21 /* AppDelegate.swift */; };
-		4CB34B432774F3E200666C21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB34B422774F3E200666C21 /* ViewController.swift */; };
+		4CB34B432774F3E200666C21 /* FirstScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB34B422774F3E200666C21 /* FirstScreenController.swift */; };
 		4CB34B482774F3E500666C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB34B472774F3E500666C21 /* Assets.xcassets */; };
 		4CB34B4B2774F3E500666C21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB34B492774F3E500666C21 /* LaunchScreen.storyboard */; };
 		4CB34B562774F3E600666C21 /* imc_viewcodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB34B552774F3E600666C21 /* imc_viewcodeTests.swift */; };
 		4CB34B602774F3E600666C21 /* imc_viewcodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB34B5F2774F3E600666C21 /* imc_viewcodeUITests.swift */; };
 		4CB34B622774F3E600666C21 /* imc_viewcodeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB34B612774F3E600666C21 /* imc_viewcodeUITestsLaunchTests.swift */; };
 		4CB34B712774F78700666C21 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB34B702774F78700666C21 /* ColorExtensions.swift */; };
-		4CB34B752774F85D00666C21 /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB34B742774F85D00666C21 /* FirstScreenViewController.swift */; };
+		4CB34B752774F85D00666C21 /* FirstScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB34B742774F85D00666C21 /* FirstScreenView.swift */; };
 		4CB34B782774F8BB00666C21 /* CodeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB34B772774F8BB00666C21 /* CodeViewProtocol.swift */; };
 		4CB34B7A2774FB7300666C21 /* FirstScreenViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB34B792774FB7300666C21 /* FirstScreenViewControllerSpec.swift */; };
 		4CB34B7C27752F1600666C21 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4CB34B7B27752F1600666C21 /* .gitignore */; };
@@ -46,7 +46,7 @@
 		33F1916AF0C118CAB1C96818 /* Pods-imc_viewcode-imc_viewcodeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imc_viewcode-imc_viewcodeUITests.debug.xcconfig"; path = "Target Support Files/Pods-imc_viewcode-imc_viewcodeUITests/Pods-imc_viewcode-imc_viewcodeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4CB34B3B2774F3E200666C21 /* imc_viewcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imc_viewcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CB34B3E2774F3E200666C21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4CB34B422774F3E200666C21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4CB34B422774F3E200666C21 /* FirstScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenController.swift; sourceTree = "<group>"; };
 		4CB34B472774F3E500666C21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CB34B4A2774F3E500666C21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CB34B4C2774F3E500666C21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		4CB34B5F2774F3E600666C21 /* imc_viewcodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imc_viewcodeUITests.swift; sourceTree = "<group>"; };
 		4CB34B612774F3E600666C21 /* imc_viewcodeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imc_viewcodeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4CB34B702774F78700666C21 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
-		4CB34B742774F85D00666C21 /* FirstScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
+		4CB34B742774F85D00666C21 /* FirstScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenView.swift; sourceTree = "<group>"; };
 		4CB34B772774F8BB00666C21 /* CodeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewProtocol.swift; sourceTree = "<group>"; };
 		4CB34B792774FB7300666C21 /* FirstScreenViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewControllerSpec.swift; sourceTree = "<group>"; };
 		4CB34B7B27752F1600666C21 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -133,12 +133,12 @@
 		4CB34B3D2774F3E200666C21 /* imc_viewcode */ = {
 			isa = PBXGroup;
 			children = (
-				4CB34B762774F8AE00666C21 /* Protocols */,
+				4CB34B7D2775FCD200666C21 /* Controller */,
 				4CB34B722774F80600666C21 /* View */,
+				4CB34B762774F8AE00666C21 /* Protocols */,
 				4CB34B6F2774F77500666C21 /* Extensions */,
 				4CB34B6E2774F76900666C21 /* Resources */,
 				4CB34B3E2774F3E200666C21 /* AppDelegate.swift */,
-				4CB34B422774F3E200666C21 /* ViewController.swift */,
 				4CB34B472774F3E500666C21 /* Assets.xcassets */,
 				4CB34B492774F3E500666C21 /* LaunchScreen.storyboard */,
 				4CB34B4C2774F3E500666C21 /* Info.plist */,
@@ -182,7 +182,7 @@
 		4CB34B722774F80600666C21 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4CB34B742774F85D00666C21 /* FirstScreenViewController.swift */,
+				4CB34B742774F85D00666C21 /* FirstScreenView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,6 +193,14 @@
 				4CB34B772774F8BB00666C21 /* CodeViewProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4CB34B7D2775FCD200666C21 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4CB34B422774F3E200666C21 /* FirstScreenController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		D6EE728ACF9A54BC9E95D690 /* Pods */ = {
@@ -465,11 +473,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CB34B432774F3E200666C21 /* ViewController.swift in Sources */,
+				4CB34B432774F3E200666C21 /* FirstScreenController.swift in Sources */,
 				4CB34B3F2774F3E200666C21 /* AppDelegate.swift in Sources */,
 				4CB34B712774F78700666C21 /* ColorExtensions.swift in Sources */,
 				4CB34B782774F8BB00666C21 /* CodeViewProtocol.swift in Sources */,
-				4CB34B752774F85D00666C21 /* FirstScreenViewController.swift in Sources */,
+				4CB34B752774F85D00666C21 /* FirstScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
