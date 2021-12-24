@@ -16,7 +16,6 @@ class FirstScreenController: UIViewController {
         
         // Add action for button
         screen.btn.addTarget(self, action: #selector(calculcate), for: .touchUpInside)
-        
     }
     
     // disable keyboard
@@ -44,7 +43,7 @@ class FirstScreenController: UIViewController {
                 print(indiceMassaCorporal)
                 
                 // Add value of imc in message
-                screen.lblTitleInViewMessage.text = screen.lblTitleInViewMessage.text! + "\(String(format: "%.3f", indiceMassaCorporal))"
+                screen.lblTitleInViewMessage.text = screen.lblTitleInViewMessage.text! + "\(String(format: "%.2f", indiceMassaCorporal))"
                 
             }
         }
@@ -83,7 +82,4 @@ class FirstScreenController: UIViewController {
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
-
-
 }
-

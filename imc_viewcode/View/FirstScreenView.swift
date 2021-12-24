@@ -5,8 +5,6 @@ import SnapKit
 
 final class FirstScreenView:  UIView {
     
-    
-
     lazy var lblTitle: UILabel = {
         let view = UILabel(frame: .zero)
         view.textColor = .white
@@ -26,8 +24,6 @@ final class FirstScreenView:  UIView {
         return view
     }()
     
-    
-    
     lazy var lblWeight: UILabel = {
         let view = UILabel(frame: .zero)
         view.textColor = .white
@@ -36,8 +32,6 @@ final class FirstScreenView:  UIView {
         view.textAlignment = .center
         return view
     }()
-    
-    
     
     lazy var textFieldWeight: UITextField = {
         let view = UITextField(frame: .zero)
@@ -51,8 +45,6 @@ final class FirstScreenView:  UIView {
     }()
     
     
-    
-    
     lazy var lblHeight: UILabel = {
         let view = UILabel(frame: .zero)
         view.textColor = .white
@@ -61,7 +53,6 @@ final class FirstScreenView:  UIView {
         view.textAlignment = .center
         return view
     }()
-    
     
     
     lazy var textFieldHeight: UITextField = {
@@ -81,7 +72,6 @@ final class FirstScreenView:  UIView {
         view.setTitle("Calcular", for: .normal)
         view.setTitleColor(UIColor(hexString: "#51b1c0"), for: .normal)
         view.backgroundColor = .yellow
-        //view.addTarget(self, action: #selector(calculcate), for: .touchUpInside)
         view.layer.cornerRadius = 7.0
         return view
     }()
@@ -119,7 +109,6 @@ final class FirstScreenView:  UIView {
         let view = UIImageView(frame: .zero)
         view.contentMode = .scaleAspectFit
         view.isHidden = true
-        //view.backgroundColor = .red
         return view
     }()
     
@@ -187,7 +176,6 @@ extension FirstScreenView: CodeView {
             make.height.equalTo(20)
         }
         
-        
         textFieldWeight.snp.makeConstraints { make in
             make.top.equalTo(lblWeight.snp.bottom).offset(10)
             make.leading.equalToSuperview().offset(40)
@@ -208,7 +196,6 @@ extension FirstScreenView: CodeView {
             make.right.equalTo(textFieldHeight.snp.right)
             make.height.equalTo(50)
         }
-        
         
         //View
         viewBack.snp.makeConstraints { make in
@@ -234,13 +221,9 @@ extension FirstScreenView: CodeView {
             make.bottom.equalToSuperview().inset(30)
         }
         
-        
-        
-        
     }
 
     func setupAdditionalConfiguration() {
         backgroundColor = UIColor(hexString: "#51b1c0")
-        
     }
 }
