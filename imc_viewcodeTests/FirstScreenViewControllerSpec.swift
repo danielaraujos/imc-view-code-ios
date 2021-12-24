@@ -10,8 +10,8 @@ class FirstScreenViewControllerSpec: QuickSpec {
         describe("Test UI") {
             it("should have the expected look and feel") {
                 let frame = UIScreen.main.bounds
-                let view = FirstScreenViewController(frame: frame)
-                expect(view) == recordSnapshot("FistScreenViewController")
+                let view = FirstScreenView(frame: frame)
+                expect(view) == recordSnapshot("FirstScreenView")
             }
         }
     }
