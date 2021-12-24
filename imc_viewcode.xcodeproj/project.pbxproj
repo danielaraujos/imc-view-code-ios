@@ -137,7 +137,6 @@
 				4CB34B722774F80600666C21 /* View */,
 				4CB34B762774F8AE00666C21 /* Protocols */,
 				4CB34B6F2774F77500666C21 /* Extensions */,
-				4CB34B6E2774F76900666C21 /* Resources */,
 				4CB34B3E2774F3E200666C21 /* AppDelegate.swift */,
 				4CB34B472774F3E500666C21 /* Assets.xcassets */,
 				4CB34B492774F3E500666C21 /* LaunchScreen.storyboard */,
@@ -162,13 +161,6 @@
 				4CB34B612774F3E600666C21 /* imc_viewcodeUITestsLaunchTests.swift */,
 			);
 			path = imc_viewcodeUITests;
-			sourceTree = "<group>";
-		};
-		4CB34B6E2774F76900666C21 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		4CB34B6F2774F77500666C21 /* Extensions */ = {
