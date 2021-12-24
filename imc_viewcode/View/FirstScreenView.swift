@@ -3,7 +3,9 @@ import Foundation
 import UIKit
 import SnapKit
 
-final class FirstScreenViewController:  UIView {
+final class FirstScreenView:  UIView {
+    
+    
 
     lazy var lblTitle: UILabel = {
         let view = UILabel(frame: .zero)
@@ -79,7 +81,7 @@ final class FirstScreenViewController:  UIView {
         view.setTitle("Calcular", for: .normal)
         view.setTitleColor(UIColor(hexString: "#51b1c0"), for: .normal)
         view.backgroundColor = .yellow
-        view.addTarget(self, action: #selector(realizarCalculo), for: .touchUpInside)
+        //view.addTarget(self, action: #selector(calculcate), for: .touchUpInside)
         view.layer.cornerRadius = 7.0
         return view
     }()
@@ -88,6 +90,7 @@ final class FirstScreenViewController:  UIView {
     lazy var viewBack: UIView = {
         let view = UIView(frame: .zero)
         view.backgroundColor = .white
+        view.isHidden = true
         return view
     }()
     
@@ -98,6 +101,7 @@ final class FirstScreenViewController:  UIView {
         view.text = "Seu Índice de Massa Corporal é: "
         view.font = UIFont.systemFont(ofSize: 15, weight: .light)
         view.textAlignment = .center
+        view.isHidden = true
         return view
     }()
     
@@ -107,23 +111,27 @@ final class FirstScreenViewController:  UIView {
         view.text = "Voce Está Obeso "
         view.font = UIFont.systemFont(ofSize: 24, weight: .heavy)
         view.textAlignment = .center
+        view.isHidden = true
         return view
     }()
     
     lazy var imageView: UIImageView = {
         let view = UIImageView(frame: .zero)
         view.contentMode = .scaleAspectFit
-        view.backgroundColor = .red
+        view.isHidden = true
+        //view.backgroundColor = .red
         return view
     }()
     
     
-    
-    @objc func realizarCalculo() {
-        print("Toquei aqui")
+    func appearAtributtsView() {
+        viewBack.isHidden = false
+        lblTitleInViewMessage.isHidden = false
+        lblResultMessage.isHidden = false
+        imageView.isHidden = false
     }
     
-
+    
     override init(frame: CGRect = .zero) {
         super.init(frame: frame)
         setupView()
@@ -137,7 +145,7 @@ final class FirstScreenViewController:  UIView {
 }
 
 
-extension FirstScreenViewController: CodeView {
+extension FirstScreenView: CodeView {
 
     func buildViewHierarchy() {
         addSubview(lblTitle)
